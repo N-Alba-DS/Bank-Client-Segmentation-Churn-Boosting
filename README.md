@@ -32,14 +32,14 @@ El script fue desarrollado en Python y utiliza las siguientes **librerías** pri
   - Matplotlib
 
  **Modelo**:
-  - pandas
-  - numpy
-  - lightgbm
-  - sklearn
-  - openpyxl
-  - optuna
-  - datetime
-  - imblearn.undersampling
+  - Pandas
+  - Numpy
+  - Lightgbm
+  - Sklearn
+  - Openpyxl
+  - Optuna
+  - Datetime
+  - Imblearn.undersampling
 
 
 ## Técnicas Utilizadas
@@ -65,6 +65,9 @@ El script fue desarrollado en Python y utiliza las siguientes **librerías** pri
 
 ## Conclusiones
 
-- La segmentación por tipo de propiedad (Casas, departamentos y cocheras) y jerárquica (entre departamentos de Puerto Madero y el resto de CABA), permitió reducir el sesgo y mejorar la precisión de las predicciones.
-- El uso de técnicas de imputación avanzadas (MICE y KNN) contribuyó a manejar eficazmente los datos faltantes.
-- La optimización de hiperparámetros mediante GridSearchCV y la validación cruzada fueron fundamentales para evitar el sobreajuste. Remarcando que debido a la inexperiencia al momento del proyecto no se contaba con conocimientos de otras herramientas más eficientes de optimización que implementaran optimización bayesiana. 
+- Lightgbm resulta un algoritmo util para tratar las variables con valores nulos de manera tal que realizar imputaciones con tecnicas como Mice, Knn o Interpolación lineal pueden empeorar su rendimiento
+- La creación de variables como feature engineering contribuyo ampliamente al mejoramiento de la perfomance del modelo
+- Realizar back-testing fundamental para medir la perfomance del modelo sobre datos nunca vistos
+- La optimización de hiperparámetros mediante Optuna permite mejorar y medir la perfomance real del modelo.
+- La utilización de voting a partir del uso de multiples semillas en el modelo para el entrenamiento y predicción del modelo resulta indispensable para lidiar con lidiar con el azar.
+
