@@ -24,14 +24,14 @@ El proyecto se implemento usando lenguaje Python en múltiples scripts de tipo J
 - **VM Optuna**: Debido al tamaño del dataset luego de realizar FE se utilizó una Virtual Machine de Google con una configuración de 256gb de ram y 24 nucleos virtuales (12 real cores) a los efectos de realizar la optimización bayesiana de hiperparámetros del algoritmo con la biblioteca Optuna.
 - **Kaggle Uploader**: Script utilizado para realizar un ensamble de voting que promediaría la predicción final a partir de un DataFrame de Pandas construido a partir del entrenamiento y predicción cambiando la semilla del modelo que incorpora los hiperparámetros obtenidos por VM Optuna. Esto se realizó a los efectos de controlar la varianza de las probabilidades de las predicciones y que los puntajes obtenidos no fuesen producto del azar en la semilla utilizada. Finalmente el script procedía a subir el modelo a Kaggle.
 
-El script fue desarrollado en Python y utiliza las siguientes librerías principales:
+El script fue desarrollado en Python y utiliza las siguientes **librerías** principales:
 
-- - Visualización:
+**Visualización**:
   - Plotly
   - Seaborn
   - Matplotlib
 
-- - Modelo:
+ **Modelo**:
   - pandas
   - numpy
   - lightgbm
