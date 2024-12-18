@@ -7,7 +7,7 @@ Este repositorio documenta el desarrollo de un modelo de predicción de churn ba
 
 ## Descripción del Trabajo
 
-El proyecto implementa técnicas de **reducción de dimensionalidad**, **clustering**, **feature engineering**, y **boosting** (LightGBM) para predecir qué clientes se darán de baja en un plazo de dos meses. Se utilizaron múltiples herramientas como Optuna para optimización de hiperparámetros y UMAP para análisis exploratorio, destacando el impacto práctico en la segmentación de clientes. 
+El proyecto implementa técnicas de **reducción de dimensionalidad**, **clustering**, **feature engineering**, y **boosting** (LightGBM) para predecir qué clientes se darán de baja en un plazo de dos meses tomando como mes de test el de septiembre de 2021. 
 
 Primero se procedió a crear la variable target ('clase_ternaria') modificando el dataset original. Ésta sería una variable de tipo categórica y dado que las clases posibles serían los clientes que en dos meses para un determinada observación todavía permaneciesen en el banco ('CONTINUA'), los clientes que en un mes se darían de baja ('BAJA+1') y los clientes que en dos meses se darían de baja ('BAJA+2'), el problema del modelo a aplicar es uno del tipo clasificación multicategórica. En el caso particular de la competencia el mes a predecir fue *septiembre del año 2021*.
 
