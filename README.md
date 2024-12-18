@@ -64,12 +64,43 @@ El script fue desarrollado en Python y utiliza las siguientes **librerías** pri
 
 ## Conclusiones
 
+### Segmentación de clientes
 
-- Segmentación de clientes: Los clientes a darse de baja poseen como característica común una menor actividad en relación con el cliente que continua. Se los puede subdividir en 3 grupos con características específicas:
-    -- Grupo 1 : se caracteriza por una baja participación con los servicios prestados por la empresa a lo largo de su relación con el banco. Utilizando principalmente los servicios relativos al débito y a la aplicación movil, es decir se caracterizan por realizar escuetamente extracciones de dinero, pago de servicios y ocacacionalmente operaciones de cheques, pero sobre todo, hacen un bajo uso de las tarjetas de credito al momento de la desvinculación.
-      En su accionar preparan progresivamente su salida del banco con anticipación. ACOMPAÑANANDO de esta manera la baja escalonada de los sueldos depositados por sus empleadores en el banco. Motivo de ello se infiere que resulta este el       perfil tipico del trabajador promedio que recibe el pago de sueldo en la entidad, lo deja depositado y ante el cambio de trabajo cambia de entidad bancaria.
-    -- Grupo 2: utiliza el banco para recibir el sueldo e inmediatamente debita la totalidad de su sueldo del mismo, o al ser trabajo no registrado recibe su sueldo en mano y una parte mínima en el banco.
-    -- Grupo 3: contraposición al cliente low-engagement y el tipo 2 low-revenue que al momento de la desvinculación el saldo de la cuenta de los mismos oscila en 0 o en valores de deuda bajos, existe un cliente de alto riesgo. Pues, sumado a la perdida de ganancia que supone la salida del ciente se adiciona como característica típica de este segmento el más alto saldo deudor promedio en crédito y un saldo negativo de cuenta en promedio de 5 a 10 veces mayor que el cliente tipo 1 y 2. Centra su actividad en el uso de los servicios crediticios del banco, con un muy escueto uso de los servicios de emisión de cheques y pago de servicios en casos puntuales. La mayor cantidad de supuestos de clientes deudores morosos al momento de la desvinculación y de casos avanzados en el proceso de cierre de tarjetas de crédito se conglomeran en este perfil. Es decir, el cliente se da a la baja por no llegar a completar el pago mínimo de su tarjeta de crédito en los meses anteriores a la desvinculación. Puede también caracterizarse por empezar el proceso de cierre de la tarjeta pero no resulta excluyente. Si resulta indicativo que los montos del pago minimo necesario para no ser moroso de la tarjeta de crédito serán el doble en promedio a los clientes que continúan y que mientras más avanzada este la cuenta o cerrada más probabilidades hay de que esté en mora y por ende de darse de baja.
+- **Segmentación de clientes**: Los clientes a darse de baja poseen como característica común una menor actividad en relación con el cliente que continúa. Se los puede subdividir en 3 grupos con características específicas:
+
+  - **Grupo 1**:
+    - Se caracteriza por una baja participación con los servicios prestados por la empresa a lo largo de su relación con el banco.
+    - Utilizan principalmente los servicios relativos al débito y a la aplicación móvil, es decir, realizan:
+      - Escuetamente, extracciones de dinero.
+      - Pago de servicios.
+      - Ocasionalmente, operaciones de cheques.
+    - Hacen un bajo uso de las tarjetas de crédito al momento de la desvinculación.
+    - Preparan progresivamente su salida del banco con anticipación, acompañando una baja escalonada de los sueldos depositados por sus empleadores.
+    - Se infiere que este perfil corresponde al trabajador promedio que:
+      - Recibe el pago de su sueldo en la entidad.
+      - Deja depositado el dinero.
+      - Cambia de banco al cambiar de empleo.
+
+  - **Grupo 2**:
+    - Utilizan el banco para recibir el sueldo e inmediatamente debitan la totalidad del mismo.
+    - En el caso de trabajos no registrados, reciben su sueldo en mano y solo una parte mínima se deposita en el banco.
+
+  - **Grupo 3**:
+    - Contrapuesto a los clientes "low-engagement" (Grupo 1) y "low-revenue" (Grupo 2), este segmento representa clientes de **alto riesgo**.
+    - Características principales:
+      - Al momento de la desvinculación, el saldo de la cuenta oscila en 0 o en valores de deuda bajos para la mayoría.
+      - Sin embargo, una porción significativa tiene un saldo deudor promedio en créditos y cuentas negativas de 5 a 10 veces mayor que los Grupos 1 y 2.
+    - Centran su actividad en el uso de servicios crediticios del banco, con un uso escueto de:
+      - Emisión de cheques.
+      - Pago de servicios en casos puntuales.
+    - La mayoría de los clientes morosos al momento de la desvinculación se agrupan en este perfil:
+      - Muchos no completan el pago mínimo de sus tarjetas de crédito en los meses anteriores a la desvinculación.
+      - Es común que inicien el proceso de cierre de tarjetas, aunque esto no es excluyente.
+      - Los montos del pago mínimo para evitar la mora son el doble en promedio que los de clientes que continúan.
+    - Cuanto más avanzada está la cuenta en mora o cerrada, mayor es la probabilidad de que el cliente se dé de baja.
+
+### Modelo de predicción
+
 - Lightgbm resulta un algoritmo util para tratar las variables con valores nulos de manera tal que realizar imputaciones con tecnicas como Mice, Knn o Interpolación lineal pueden empeorar su rendimiento
 - La creación de variables como feature engineering contribuyo ampliamente al mejoramiento de la perfomance del modelo
 - Realizar back-testing fundamental para medir la perfomance del modelo sobre datos nunca vistos.
