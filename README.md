@@ -109,5 +109,5 @@ El script fue desarrollado en Python y utiliza las siguientes **librerías** pri
   - Imblearn.undersampling
 
 **Análisis exploratorio**
-  -DBSCAN
-  -UMAP
+  - DBSCAN
+  - UMAP
