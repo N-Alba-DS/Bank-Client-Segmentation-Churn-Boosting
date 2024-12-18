@@ -84,8 +84,8 @@ El proyecto se implemento usando lenguaje Python en múltiples scripts de tipo J
 
 ### Modelo de predicción
 
-- Lightgbm resulta un algoritmo util para tratar las variables con valores nulos de manera tal que realizar imputaciones con tecnicas como Mice, Knn o Interpolación lineal pueden empeorar su rendimiento
-- La creación de variables como feature engineering contribuyo ampliamente al mejoramiento de la perfomance del modelo
+- Lightgbm resulta un algoritmo util para tratar las variables con valores nulos de manera tal que realizar imputaciones con tecnicas como Mice, Knn o Interpolación lineal pueden empeorar su rendimiento.
+- La creación de variables como feature engineering contribuyo ampliamente al mejoramiento de la perfomance del modelo.
 - Realizar back-testing fundamental para medir la perfomance del modelo sobre datos nunca vistos.
 - La optimización de hiperparámetros mediante Optuna permite mejorar y medir la perfomance real del modelo.
 - La utilización de voting a partir del uso de multiples semillas en el modelo para el entrenamiento y predicción del modelo resulta indispensable para lidiar con lidiar con el azar.
