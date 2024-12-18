@@ -3,7 +3,7 @@
 
 Este repositorio documenta el desarrollo de un modelo de predicción de churn bancario, realizado como trabajo final para la competencia de Kaggle organizada por la materia de Data Mining en Economía y Finanzas de la “Maestría en Explotación de Datos y Descubrimiento del Conocimiento” de la UBA.
 
-[Competencia de Kaggle - DMEyF 2024 Tercera](https://www.kaggle.com/competitions/fcen-dm-2024-prediccion-precio-de-propiedades/overview](https://www.kaggle.com/competitions/dm-ey-f-2024-tercera/leaderboard)
+[Competencia de Kaggle - DMEyF 2024 Tercera](https://www.kaggle.com/competitions/dm-ey-f-2024-tercera/leaderboard)
 
 ## Descripción del Trabajo
 
