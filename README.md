@@ -1,5 +1,4 @@
-# Churn-prediction-with-boosting
-
+# Segmentación de Clientes y Predicción de Churn Bancario con LightGBM
 
 Este repositorio contiene el código y la documentación del modelo de predicción de churning bancario, desarrollado como trabajo final para la competencia de Kaggle organizada por la materia de Data Mining en Economía y Finanzas de la “Maestría en Explotación de Datos y Descubrimiento del Conocimiento” de la UBA.
 
