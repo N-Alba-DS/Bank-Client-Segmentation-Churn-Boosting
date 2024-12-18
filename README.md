@@ -66,7 +66,7 @@ El script fue desarrollado en Python y utiliza las siguientes **librerías** pri
 
 ### Segmentación de clientes
 
-- **Segmentación de clientes**: Los clientes a darse de baja poseen como característica común una menor actividad en relación con el cliente que continúa. Se los puede subdividir en 3 grupos con características específicas:
+- **Características comunes**: Los clientes a darse de baja poseen como característica común una menor actividad en relación con el cliente que continúa. Se los puede subdividir en 3 grupos con características específicas:
 
   - **Grupo 1**:
     - Se caracteriza por una baja participación con los servicios prestados por la empresa a lo largo de su relación con el banco.
